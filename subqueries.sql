@@ -10,3 +10,10 @@ from playlist_track
 where playlist_id in (
   select playlist_id from playlist where name = 'Music'
  );
+
+ 3.
+ select name
+from track
+where track_id in (
+  select track_id from playlist_track where playlist_id = 5
+ );
