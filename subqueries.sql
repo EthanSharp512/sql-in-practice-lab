@@ -17,3 +17,10 @@ from track
 where track_id in (
   select track_id from playlist_track where playlist_id = 5
  );
+
+ 4.
+ select *
+ from track
+ where genre_id in (
+   select genre_id from genre where name = 'Comedy'
+ );
