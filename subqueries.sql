@@ -24,3 +24,10 @@ where track_id in (
  where genre_id in (
    select genre_id from genre where name = 'Comedy'
  );
+
+ 5.
+ select *
+from track
+where album_id in (
+  select album_id from album where title = 'Fireball'
+);
