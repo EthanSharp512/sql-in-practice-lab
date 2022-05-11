@@ -38,4 +38,4 @@ from track
 where album_id in (
   select album_id from album where artist_id in (
     select artist_id from artist where name = 'Queen'
-);
+));
